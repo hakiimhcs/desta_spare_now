@@ -77,38 +77,45 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'partum_inventory.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
 DATABASES = {
     'default': {
-
-
-        # 'ENGINE': 'mysql.connector.django',
-        # 'NAME': 'awakzfip_desta',
-        # 'USER': 'awakzfip_desta_user',
-        # 'PASSWORD': 'jamir1.022',
-        # 'HOST': 'localhost',
-        # 'PORT': '3306',
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'desta_db_1',
-        # 'USER':'desta_user',
-        # 'PASSWORD':'jamir1.022',
-        # 'HOST':'database-2.cn1e4u5sqphf.us-east-1.rds.amazonaws.com',
-        # 'PORT':'5432'
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'awakzfip_desta_store',
-        'USER': 'awakzfip_desta_store_user',
-        'PASSWORD': 'jamir1.022',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+
+
+#         # 'ENGINE': 'mysql.connector.django',
+#         # 'NAME': 'awakzfip_desta',
+#         # 'USER': 'awakzfip_desta_user',
+#         # 'PASSWORD': 'jamir1.022',
+#         # 'HOST': 'localhost',
+#         # 'PORT': '3306',
+#         # 'ENGINE': 'django.db.backends.postgresql',
+#         # 'NAME': 'desta_db_1',
+#         # 'USER':'desta_user',
+#         # 'PASSWORD':'jamir1.022',
+#         # 'HOST':'database-2.cn1e4u5sqphf.us-east-1.rds.amazonaws.com',
+#         # 'PORT':'5432'
+#         # 'ENGINE': 'django.db.backends.sqlite3',
+#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'awakzfip_desta_store',
+#         'USER': 'awakzfip_desta_store_user',
+#         'PASSWORD': 'jamir1.022',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+    
+#     }
+# }
 
 
 # Password validation
